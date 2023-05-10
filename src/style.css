@@ -1,0 +1,82 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46)
+  }
+  
+  .title {
+    font-size: 70px;
+    color: white;
+    animation: titulo 2s;
+  }
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #main h2 {
+    margin-bottom: 10px;
+  }
+  
+  #main span {
+    margin-bottom: 10px;
+  }
+  
+  @keyframes titulo {
+    from{
+      transform: rotateX(90deg);
+    }to {
+      transform: rotateX(0deg);
+    }
+  }
+  
+  .inpuut {
+    background-color: gray;
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(11, 10, 10, 0.5);
+  }
+  
+  input {
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+    color: #121212;
+    outline: none;
+  }
+  
+  .inpuut input::placeholder{
+    color: black;
+  }
+  
+  .search{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s; /*complemento da linha 65*/
+  }
+  
+  .search:hover{
+    transform: scale(1.5); /*aumenta o tamanho do botão*/
+  }
+  
+  @media (max-width: 620px){
+    .title{
+      font-size: 60px;
+    }
+    #main {
+      font-size: 18px;
+    }
+  }
